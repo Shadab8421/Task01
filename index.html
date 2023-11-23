@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sign in page</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="loader" class="loader"></div>
+    <div id="loaderContainer" class="loader-container"></div>
+    <section class="form-container">
+      <form id="signInForm">
+        <h3>Sign in now</h3>
+        <div>
+          <input
+            type="email"
+            id="signInEmail"
+            class="box"
+            placeholder="enter your email"
+            required
+          />
+          <span id="emailError" class="error-message"></span>
+        </div>
+        <div>
+          <input
+            type="password"
+            id="signInPassword"
+            class="box"
+            placeholder="enter your password"
+            required
+          />
+          <span id="passwordError" class="error-message"></span>
+        </div>
+        <input type="submit" class="btn" />
+        <p>Don't have an account? <a href="signup.html">Sign up now</a></p>
+      </form>
+    </section>
+
+    <script src="./js/validations.js"></script>
+  </body>
+</html>
